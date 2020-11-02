@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import data from './Data';
+import Card from './Cards';
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="container">
+
+    <div className="topnav">
+      <p>WebFlix</p>
+      <button>Sign In</button>
+    </div>
+
+    <div className="header-banner">
+      <h1>Unlimited movies, TV <br />shows and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <p className="short-desc">Ready to watch? Enter your email to create or restart your membership.</p>
+      <button>Watch Now</button>
+    </div>
+
+    <div className="movie-content">
+
+      {
+        data.map(item =>
+          <Card name={item.name}
+            image={item.image}
+            category={item.category}
+            url={item.link} />
+        )
+      }
+
+    </div>
+
+    <div className="footer">Designed by Azeem Siddiqui @ <a href="https://thecodingshef.com" >TheCodingShef</a></div>
+
+  </div>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
