@@ -11,7 +11,7 @@ ReactDOM.render(
   <div className="container">
 
     <div className="topnav">
-      <p>WebFlix</p>
+      <p className="site-name">WebFlix</p>
       <button>Sign In</button>
     </div>
 
