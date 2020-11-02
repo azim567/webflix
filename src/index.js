@@ -18,7 +18,7 @@ ReactDOM.render(
     <div className="header-banner">
       <h1>Unlimited movies, TV <br />shows and more.</h1>
       <p>Watch anywhere. Cancel anytime.</p>
-      <p className="short-desc">Ready to watch? Enter your email to create or restart your membership.</p>
+      <p className="short-desc">Ready to watch? Create or restart your membership.</p>
       <button>Watch Now</button>
     </div>
 
