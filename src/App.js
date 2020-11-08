@@ -33,7 +33,7 @@ function App() {
 
     </div>
 
-    <div className="footer">Designed by Azeem Siddiqui @ <a href="https://thecodingshef.com" >TheCodingShef</a></div>
+    <div className="footer">Designed by {"❤️"} Azeem Siddiqui @ <a href="https://thecodingshef.com" >TheCodingShef</a></div>
 
   </div>
   );
